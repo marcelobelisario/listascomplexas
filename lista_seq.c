@@ -15,12 +15,12 @@ Lista_s *criar(int capacidade){
         nova_lista->capacidade = capacidade;
         nova_lista->dados = (int*) malloc(sizeof(int)*capacidade);
         if(nova_lista->dados == NULL)
-            printf("Falha ao criar lista!\n");
+            printf("\n\n Falha ao criar lista!\n");
 
-        printf("Lista criada com sucesso!\n");
+        printf("\n\n Lista criada com sucesso!\n");
     }
     if(nova_lista == NULL)
-        printf("Falha ao criar lista!\n");
+        printf("\n\n Falha ao criar lista!\n");
 
     return nova_lista;
 }
@@ -136,10 +136,11 @@ void exibir(Lista_s *x){
     if(vazia(x) == true){
         printf("\n Lista vazia!");
     }
+    printf("\n Lista: ");
     for(int i=0; i < x->quantidade; i++){
-        printf("| %d", x->dados[i]);
+        printf(" |%d|", x->dados[i]);
     }
-    printf("| \n");
+    printf(" \n");
 }
 
 int qnte_impares_lst(Lista_s *l){

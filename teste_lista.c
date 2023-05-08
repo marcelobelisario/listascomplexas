@@ -7,6 +7,9 @@ int main(){
     // Define uma seed aleatória através da hora do Windows
     srand(time(NULL));
     
+    // Faz a limpeza dos códigos acima
+    system("cls");
+
     // Cria uma lista sequencial
     Lista_s *lista_nova = criar(30);
     
@@ -22,7 +25,7 @@ int main(){
     exibir(lista_nova);
 
     // Informa a quantidade de números ímpares presentes na lista
-    printf("\n quantidade de numeros impares: %d", qnte_impares_lst(lista_nova));
+    printf("\n Quantidade de numeros impares: %d\n\n", qnte_impares_lst(lista_nova));
 
     return 0;
 }
